@@ -62,6 +62,7 @@ body {
 }
 
 h1, h2, h3 {
+    font-family: "Montserrat";
     font-weight: bold;
     color: #000000;
     text-align: center;
@@ -94,8 +95,41 @@ a:visited {
     background-color: #333;
     width: 60%;
     margin: auto;
-    margin-top: 20px; 
+    margin-top: 10px; 
+    margin-bottom: 15px;
+}
+
+/* Covertron */
+#covertron {
+    height: 70vh;
+    width: 100%;
+    background-image: url(../resources/images/covertron.jpg);
     margin-bottom: 30px;
+    
+    #covertron-filter {
+        height: 70vh;
+        width: 100%;
+        background-color: rgba(40, 40, 40, 0.6);
+        display: flex;
+    }
+    
+    #covertron-text {
+        margin: auto;
+        align-self: center;
+        width: 50%;
+        color: $clean;
+        text-shadow:
+            -1px -1px 3px #000,
+            1px -1px 3px #000,
+            -1px 1px 3px #000,
+            1px 1px 3px #000;
+        h1, h2 {
+            color: $clean;
+        }
+        p {
+            padding: 0 15%;
+        }
+    }
 }
 
 /* Main body */
@@ -103,7 +137,6 @@ a:visited {
     font-family: $head-font;
     color: #FFF;
     background-color: $granite;
-    margin-bottom: 30px;
     display: flex;
     
     #page-title {
@@ -137,12 +170,35 @@ a:visited {
 }
 
 #main-body {
+    margin: 0px 20%;
     p {
-        padding: 30px 20%;
+        padding: 30px 0px;
         font-size: 1.2em;
+    }
+    
+    .info-cont {
+        display: flex;
+        border-radius: 15px;
+        background-color: #A6F56E;
+        padding: 4%;
+        
+        .info-cont-text {
+            padding: 0px 5%;
+            width: 70%;
+            
+        }
+        
+        .info-cont-img {
+            width: 20%;
+            display: flex;
+            img {
+                width: 100%;
+                align-self: center;
+            }
+        }
     }
 }
 
 #body-container {
-    @include gradient-tl-br($limefrog, $navygreen);
+    @include gradient-tl-br($limefrog, $spotify);
 }

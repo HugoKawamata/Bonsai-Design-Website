@@ -7,6 +7,7 @@ body {
   color: #2D2D2D; }
 
 h1, h2, h3 {
+  font-family: "Montserrat";
   font-weight: bold;
   color: #000000;
   text-align: center; }
@@ -33,15 +34,36 @@ a:visited {
   background-color: #333;
   width: 60%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+/* Covertron */
+#covertron {
+  height: 70vh;
+  width: 100%;
+  background-image: url(../resources/images/covertron.jpg);
   margin-bottom: 30px; }
+  #covertron #covertron-filter {
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.6);
+    display: flex; }
+  #covertron #covertron-text {
+    margin: auto;
+    align-self: center;
+    width: 50%;
+    color: #E8E8E8;
+    text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; }
+    #covertron #covertron-text h1, #covertron #covertron-text h2 {
+      color: #E8E8E8; }
+    #covertron #covertron-text p {
+      padding: 0 15%; }
 
 /* Main body */
 #page-head {
   font-family: "Montserrat", sans-serif;
   color: #FFF;
   background-color: #2D2D2D;
-  margin-bottom: 30px;
   display: flex; }
   #page-head #page-title {
     color: #E8E8E8; }
@@ -64,18 +86,34 @@ a:visited {
       #page-head nav ul .active {
         color: #FBA100; }
 
-#main-body p {
-  padding: 30px 20%;
-  font-size: 1.2em; }
+#main-body {
+  margin: 0px 20%; }
+  #main-body p {
+    padding: 30px 0px;
+    font-size: 1.2em; }
+  #main-body .info-cont {
+    display: flex;
+    border-radius: 15px;
+    background-color: #A6F56E;
+    padding: 4%; }
+    #main-body .info-cont .info-cont-text {
+      padding: 0px 5%;
+      width: 70%; }
+    #main-body .info-cont .info-cont-img {
+      width: 20%;
+      display: flex; }
+      #main-body .info-cont .info-cont-img img {
+        width: 100%;
+        align-self: center; }
 
 #body-container {
-  background: -webkit-linear-gradient(left top, #ABDB48, #47801E);
+  background: -webkit-linear-gradient(left top, #ABDB48, #80CA49);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #ABDB48, #47801E);
+  background: -o-linear-gradient(bottom right, #ABDB48, #80CA49);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #ABDB48, #47801E);
+  background: -moz-linear-gradient(bottom right, #ABDB48, #80CA49);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #ABDB48, #47801E);
+  background: linear-gradient(to bottom right, #ABDB48, #80CA49);
   /* Standard syntax */ }
 
 /*# sourceMappingURL=bonsai-style.css.map */
