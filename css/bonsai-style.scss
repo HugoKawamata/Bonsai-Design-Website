@@ -1,0 +1,148 @@
+/* Variables and Mixins */
+$body-font: 'Source Sans Pro', sans-serif;
+$head-font: 'Montserrat', sans-serif;
+
+/* Variables */
+
+//Reds (brighter to darker)
+
+//Oranges (more red to more yellow)
+$sunset: #C06014;
+$sunrise: #FBA100;
+
+//Yellows (lighter to vomit)
+$light :#EFD9C1;
+$highlighter: #FFDF00;
+
+//Greens (yellower to darker)
+$lightspotify: #90D65E;
+$limefrog: #ABDB48;
+$greengreen: #63CF41;
+$navygreen: #47801E;
+$spotify: #80CA49;
+
+//Blues (lighter to darker)
+$bluetopaz: #67AECA;
+$aqua: #6BBAA7;
+$vermillion: #333A56;
+
+//Purples (lighter to darker)
+$dustyrose: #B6A19E;
+$lavender: #6C648B;
+$jewel: #5F0F4E;
+$amethyst: #675682;
+
+//Pinks (lighter to darker)
+$rose: #E52A6F;
+
+//Greys (lighter to darker)
+$fresh: #F7F5E6;
+$clean: #E8E8E8;
+$granite: #2D2D2D;
+
+/* Mixins */
+@mixin gradient-tl-br($c1, $c2){
+    background: -webkit-linear-gradient(left top, $c1, $c2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, $c1, $c2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, $c1, $c2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, $c1, $c2); /* Standard syntax */
+}
+
+@mixin gradient-tr-bl($c1, $c2){
+    background: -webkit-linear-gradient(right top, $c1, $c2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, $c1, $c2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, $c1, $c2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom left, $c1, $c2); /* Standard syntax */
+}
+
+/* Element specific */
+body {
+    font-family: $body-font;
+    color: $granite;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: $sunrise;
+}
+
+a:visited {
+    color: $sunset;
+}
+
+.underline {
+    height: 2px;
+    background-color: #333;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px; 
+    margin-bottom: 30px;
+}
+
+/* Main body */
+#page-head {
+    font-family: $head-font;
+    color: #FFF;
+    background-color: $granite;
+    margin-bottom: 30px;
+    display: flex;
+    
+    #page-title {
+        color: $clean;
+    }
+    
+    nav {
+        flex-grow: 1;
+        font-size: 1.3em;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        ul {
+            flex-grow: 1;
+            margin: 0px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            a {
+                color: $clean;
+                width: auto;
+            }
+            .active {
+                color: $sunrise;
+            }
+        }
+    }
+}
+
+#main-body {
+    p {
+        padding: 30px 20%;
+        font-size: 1.2em;
+    }
+}
+
+#body-container {
+    @include gradient-tl-br($limefrog, $navygreen);
+}

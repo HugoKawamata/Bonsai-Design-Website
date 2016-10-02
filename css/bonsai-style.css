@@ -1,0 +1,81 @@
+/* Variables and Mixins */
+/* Variables */
+/* Mixins */
+/* Element specific */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2D2D2D; }
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #000000;
+  text-align: center; }
+
+h1 {
+  font-size: 3em;
+  padding: 30px; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 2em; }
+
+a {
+  text-decoration: none;
+  color: #FBA100; }
+
+a:visited {
+  color: #C06014; }
+
+.underline {
+  height: 2px;
+  background-color: #333;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+/* Main body */
+#page-head {
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  background-color: #2D2D2D;
+  margin-bottom: 30px;
+  display: flex; }
+  #page-head #page-title {
+    color: #E8E8E8; }
+  #page-head nav {
+    flex-grow: 1;
+    font-size: 1.3em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    #page-head nav ul {
+      flex-grow: 1;
+      margin: 0px 10%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      #page-head nav ul a {
+        color: #E8E8E8;
+        width: auto; }
+      #page-head nav ul .active {
+        color: #FBA100; }
+
+#main-body p {
+  padding: 30px 20%;
+  font-size: 1.2em; }
+
+#body-container {
+  background: -webkit-linear-gradient(left top, #ABDB48, #47801E);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #ABDB48, #47801E);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #ABDB48, #47801E);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #ABDB48, #47801E);
+  /* Standard syntax */ }
+
+/*# sourceMappingURL=bonsai-style.css.map */
