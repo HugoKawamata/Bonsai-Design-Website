@@ -55,6 +55,18 @@ $granite: #2D2D2D;
     background: linear-gradient(to bottom left, $c1, $c2); /* Standard syntax */
 }
 
+/* Keyframes */
+@keyframes fadein {
+    0% {opacity: 0;
+        text-shadow: none;}
+    100% {opacity: 1;
+          text-shadow:
+            -1px -1px 3px #000,
+            1px -1px 3px #000,
+            -1px 1px 3px #000,
+            1px 1px 3px #000;}
+}
+
 /* Element specific */
 body {
     font-family: $body-font;
@@ -99,6 +111,7 @@ a:visited {
     margin-bottom: 15px;
 }
 
+
 /* Covertron */
 #covertron {
     height: 70vh;
@@ -116,6 +129,8 @@ a:visited {
     #covertron-text {
         margin: auto;
         align-self: center;
+        animation-name: fadein;
+        animation-duration: 2s;
         width: 50%;
         color: $clean;
         text-shadow:
@@ -125,14 +140,26 @@ a:visited {
             1px 1px 3px #000;
         h1, h2 {
             color: $clean;
+            animation-name: fadein;
+            animation-duration: 2s;
         }
         p {
             padding: 0 15%;
+            animation-name: fadein;
+            animation-duration: 2s;
         }
     }
 }
 
 /* Main body */
+.nav-under {
+    width: 0px;
+    height: 2px;
+    background-color: $sunrise;
+    margin: auto;
+    margin-top: 5px;
+}
+
 #page-head {
     font-family: $head-font;
     color: #FFF;
@@ -151,7 +178,7 @@ a:visited {
         align-items: center;
         justify-content: space-around;
         
-        ul {
+        #navbar {
             flex-grow: 1;
             margin: 0px 10%;
             display: flex;
@@ -162,11 +189,18 @@ a:visited {
                 color: $clean;
                 width: auto;
             }
+            
+            a:hover + .nav-under{
+                transition: width 2s;
+                width: 100%;
+            }
+            
             .active {
                 color: $sunrise;
             }
         }
     }
+    
 }
 
 #main-body {
@@ -179,8 +213,9 @@ a:visited {
     .info-cont {
         display: flex;
         border-radius: 15px;
-        background-color: #A6F56E;
+        background-color: #B2ED87;
         padding: 4%;
+        margin-bottom: 30px;
         
         .info-cont-text {
             padding: 0px 5%;
@@ -201,4 +236,25 @@ a:visited {
 
 #body-container {
     @include gradient-tl-br($limefrog, $spotify);
+}
+
+#page-foot {
+    background-color: $granite;
+    #footer-links {
+        ul {
+            padding: 20px 30% 10px 30%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            a {
+                color: $clean;
+                font-size: 1.1em;
+            }
+        }
+    }
+    #footer-co {
+        color: $clean;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 }

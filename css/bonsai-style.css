@@ -1,6 +1,14 @@
 /* Variables and Mixins */
 /* Variables */
 /* Mixins */
+/* Keyframes */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    text-shadow: none; }
+  100% {
+    opacity: 1;
+    text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; } }
 /* Element specific */
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -51,15 +59,28 @@ a:visited {
   #covertron #covertron-text {
     margin: auto;
     align-self: center;
+    animation-name: fadein;
+    animation-duration: 2s;
     width: 50%;
     color: #E8E8E8;
     text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; }
     #covertron #covertron-text h1, #covertron #covertron-text h2 {
-      color: #E8E8E8; }
+      color: #E8E8E8;
+      animation-name: fadein;
+      animation-duration: 2s; }
     #covertron #covertron-text p {
-      padding: 0 15%; }
+      padding: 0 15%;
+      animation-name: fadein;
+      animation-duration: 2s; }
 
 /* Main body */
+.nav-under {
+  width: 0px;
+  height: 2px;
+  background-color: #FBA100;
+  margin: auto;
+  margin-top: 5px; }
+
 #page-head {
   font-family: "Montserrat", sans-serif;
   color: #FFF;
@@ -74,16 +95,19 @@ a:visited {
     display: flex;
     align-items: center;
     justify-content: space-around; }
-    #page-head nav ul {
+    #page-head nav #navbar {
       flex-grow: 1;
       margin: 0px 10%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around; }
-      #page-head nav ul a {
+      #page-head nav #navbar a {
         color: #E8E8E8;
         width: auto; }
-      #page-head nav ul .active {
+      #page-head nav #navbar a:hover + .nav-under {
+        transition: width 2s;
+        width: 100%; }
+      #page-head nav #navbar .active {
         color: #FBA100; }
 
 #main-body {
@@ -94,8 +118,9 @@ a:visited {
   #main-body .info-cont {
     display: flex;
     border-radius: 15px;
-    background-color: #A6F56E;
-    padding: 4%; }
+    background-color: #B2ED87;
+    padding: 4%;
+    margin-bottom: 30px; }
     #main-body .info-cont .info-cont-text {
       padding: 0px 5%;
       width: 70%; }
@@ -115,5 +140,20 @@ a:visited {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #ABDB48, #80CA49);
   /* Standard syntax */ }
+
+#page-foot {
+  background-color: #2D2D2D; }
+  #page-foot #footer-links ul {
+    padding: 20px 30% 10px 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around; }
+    #page-foot #footer-links ul a {
+      color: #E8E8E8;
+      font-size: 1.1em; }
+  #page-foot #footer-co {
+    color: #E8E8E8;
+    text-align: center;
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=bonsai-style.css.map */
