@@ -19,7 +19,7 @@ $lightspotify: #90D65E;
 $limefrog: #ABDB48;
 $greengreen: #63CF41;
 $navygreen: #47801E;
-$spotify: #80CA49;
+$spotify1: #80CA50;
 
 //Blues (lighter to darker)
 $bluetopaz: #67AECA;
@@ -71,6 +71,7 @@ $granite: #2D2D2D;
 body {
     font-family: $body-font;
     color: $granite;
+    @include gradient-tr-bl($spotify1, $spotify1)
 }
 
 h1, h2, h3 {
@@ -114,15 +115,15 @@ a:visited {
 
 /* Covertron */
 #covertron {
-    height: 70vh;
+    height: 85vh;
     width: 100%;
     background-image: url(../resources/images/covertron.jpg);
     margin-bottom: 30px;
     
     #covertron-filter {
-        height: 70vh;
+        height: 85vh;
         width: 100%;
-        background-color: rgba(40, 40, 40, 0.6);
+        background-color: rgba(71, 128, 30, 0.6);
         display: flex;
     }
     
@@ -144,6 +145,7 @@ a:visited {
             animation-duration: 2s;
         }
         p {
+            text-align: center;
             padding: 0 15%;
             animation-name: fadein;
             animation-duration: 2s;
@@ -155,7 +157,7 @@ a:visited {
 .nav-under {
     width: 0px;
     height: 2px;
-    background-color: $sunrise;
+    background-color: $spotify1;
     margin: auto;
     margin-top: 5px;
 }
@@ -168,6 +170,16 @@ a:visited {
     
     #page-title {
         color: $clean;
+    }
+    
+    #logo {
+        margin: auto;
+    }
+    
+    .head-logo {
+        margin: auto;
+        align-self: center;
+        height: 70px;
     }
     
     nav {
@@ -191,12 +203,12 @@ a:visited {
             }
             
             a:hover + .nav-under{
-                transition: width 2s;
+                transition: width 1.5s;
                 width: 100%;
             }
             
             .active {
-                color: $sunrise;
+                color: $spotify1;
             }
         }
     }
@@ -204,18 +216,19 @@ a:visited {
 }
 
 #main-body {
-    margin: 0px 20%;
     p {
         padding: 30px 0px;
         font-size: 1.2em;
     }
     
     .info-cont {
+        margin: 0px 20% 0px 20%;
         display: flex;
         border-radius: 15px;
         background-color: #B2ED87;
         padding: 4%;
         margin-bottom: 30px;
+        opacity: 0;
         
         .info-cont-text {
             padding: 0px 5%;
@@ -235,7 +248,6 @@ a:visited {
 }
 
 #body-container {
-    @include gradient-tl-br($limefrog, $spotify);
 }
 
 #page-foot {

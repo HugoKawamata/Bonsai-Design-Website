@@ -12,7 +12,15 @@
 /* Element specific */
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: #2D2D2D; }
+  color: #2D2D2D;
+  background: -webkit-linear-gradient(right top, #80CA50, #80CA50);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom left, #80CA50, #80CA50);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom left, #80CA50, #80CA50);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom left, #80CA50, #80CA50);
+  /* Standard syntax */ }
 
 h1, h2, h3 {
   font-family: "Montserrat";
@@ -47,14 +55,14 @@ a:visited {
 
 /* Covertron */
 #covertron {
-  height: 70vh;
+  height: 85vh;
   width: 100%;
   background-image: url(../resources/images/covertron.jpg);
   margin-bottom: 30px; }
   #covertron #covertron-filter {
-    height: 70vh;
+    height: 85vh;
     width: 100%;
-    background-color: rgba(40, 40, 40, 0.6);
+    background-color: rgba(71, 128, 30, 0.6);
     display: flex; }
   #covertron #covertron-text {
     margin: auto;
@@ -69,6 +77,7 @@ a:visited {
       animation-name: fadein;
       animation-duration: 2s; }
     #covertron #covertron-text p {
+      text-align: center;
       padding: 0 15%;
       animation-name: fadein;
       animation-duration: 2s; }
@@ -77,7 +86,7 @@ a:visited {
 .nav-under {
   width: 0px;
   height: 2px;
-  background-color: #FBA100;
+  background-color: #80CA50;
   margin: auto;
   margin-top: 5px; }
 
@@ -88,6 +97,12 @@ a:visited {
   display: flex; }
   #page-head #page-title {
     color: #E8E8E8; }
+  #page-head #logo {
+    margin: auto; }
+  #page-head .head-logo {
+    margin: auto;
+    align-self: center;
+    height: 70px; }
   #page-head nav {
     flex-grow: 1;
     font-size: 1.3em;
@@ -105,41 +120,31 @@ a:visited {
         color: #E8E8E8;
         width: auto; }
       #page-head nav #navbar a:hover + .nav-under {
-        transition: width 2s;
+        transition: width 1.5s;
         width: 100%; }
       #page-head nav #navbar .active {
-        color: #FBA100; }
+        color: #80CA50; }
 
-#main-body {
-  margin: 0px 20%; }
-  #main-body p {
-    padding: 30px 0px;
-    font-size: 1.2em; }
-  #main-body .info-cont {
-    display: flex;
-    border-radius: 15px;
-    background-color: #B2ED87;
-    padding: 4%;
-    margin-bottom: 30px; }
-    #main-body .info-cont .info-cont-text {
-      padding: 0px 5%;
-      width: 70%; }
-    #main-body .info-cont .info-cont-img {
-      width: 20%;
-      display: flex; }
-      #main-body .info-cont .info-cont-img img {
-        width: 100%;
-        align-self: center; }
-
-#body-container {
-  background: -webkit-linear-gradient(left top, #ABDB48, #80CA49);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #ABDB48, #80CA49);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #ABDB48, #80CA49);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #ABDB48, #80CA49);
-  /* Standard syntax */ }
+#main-body p {
+  padding: 30px 0px;
+  font-size: 1.2em; }
+#main-body .info-cont {
+  margin: 0px 20% 0px 20%;
+  display: flex;
+  border-radius: 15px;
+  background-color: #B2ED87;
+  padding: 4%;
+  margin-bottom: 30px;
+  opacity: 0; }
+  #main-body .info-cont .info-cont-text {
+    padding: 0px 5%;
+    width: 70%; }
+  #main-body .info-cont .info-cont-img {
+    width: 20%;
+    display: flex; }
+    #main-body .info-cont .info-cont-img img {
+      width: 100%;
+      align-self: center; }
 
 #page-foot {
   background-color: #2D2D2D; }
