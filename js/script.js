@@ -14,7 +14,8 @@ $(document).ready(function () {
             if (bottom_of_window > bottom_of_object - 150) {
                 $(this).animate({
                     'opacity': '1',
-                    'margin-left': '20%'
+                    'margin-left': '20%',
+                    'margin-right': '20%'
                 }, 500);
             }
         });
