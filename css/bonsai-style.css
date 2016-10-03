@@ -72,10 +72,15 @@ a:visited {
       text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; }
       #covertron #covertron-text p {
         display: none; }
-      #covertron #covertron-text h1, #covertron #covertron-text h2 {
+      #covertron #covertron-text h1, #covertron #covertron-text h2, #covertron #covertron-text h4 {
         color: #E8E8E8;
         animation-name: fadein;
-        animation-duration: 2s; } }
+        animation-duration: 2s; }
+      #covertron #covertron-text h4 {
+        font-size: 1.4em;
+        line-height: 1.55em;
+        text-align: center;
+        padding: 30px 5%; } }
   @media (min-width: 640px) {
     #covertron #covertron-text {
       margin: auto;
@@ -85,7 +90,7 @@ a:visited {
       width: 50%;
       color: #E8E8E8;
       text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; }
-      #covertron #covertron-text p {
+      #covertron #covertron-text p, #covertron #covertron-text h4 {
         font-size: 1.4em;
         line-height: 1.55em;
         text-align: center;
@@ -157,7 +162,8 @@ a:visited {
 
 #main-body p {
   padding: 30px 0px;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  line-height: 1.4em; }
 #main-body .info-cont {
   margin: 0px;
   display: flex;
@@ -192,6 +198,27 @@ a:visited {
     flex-wrap: wrap; }
   #main-body .slide-left {
     flex-wrap: wrap-reverse; } }
+#main-body .profile-wrapper {
+  display: flex; }
+  #main-body .profile-wrapper .profile {
+    flex-grow: 1;
+    padding: 30px 5%;
+    margin: 0 5%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: #B2ED87; }
+    #main-body .profile-wrapper .profile .icon-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      #main-body .profile-wrapper .profile .icon-container a {
+        text-align: center;
+        padding-bottom: 10px; }
+      #main-body .profile-wrapper .profile .icon-container img {
+        width: 50%; }
+@media (max-width: 639px) {
+  #main-body .profile-wrapper {
+    flex-wrap: wrap; } }
 
 #page-foot {
   background-color: #2D2D2D; }

@@ -15,6 +15,7 @@ $light :#EFD9C1;
 $highlighter: #FFDF00;
 
 //Greens (yellower to darker)
+$reallight: #B2ED87;
 $lightspotify: #90D65E;
 $limefrog: #ABDB48;
 $greengreen: #63CF41;
@@ -159,10 +160,17 @@ a:visited {
                 display: none;
             }
             
-            h1, h2 {
+            h1, h2, h4 {
                 color: $clean;
                 animation-name: fadein;
                 animation-duration: 2s;
+            }
+            
+            h4 {
+                font-size: 1.4em;
+                line-height: 1.55em;
+                text-align: center;
+                padding: 30px 5%;
             }
         }
     }
@@ -181,7 +189,7 @@ a:visited {
                 -1px 1px 3px #000,
                 1px 1px 3px #000;
 
-            p {
+            p, h4 {
                 font-size: 1.4em;
                 line-height: 1.55em;
                 text-align: center;
@@ -292,13 +300,14 @@ a:visited {
     p {
         padding: 30px 0px;
         font-size: 1.2em;
+        line-height: 1.4em;
     }
     
     .info-cont {
         margin: 0px;
         display: flex;
         border-radius: 15px;
-        background-color: #B2ED87;
+        background-color: $reallight;
         padding: 4%;
         margin-bottom: 30px;
         
@@ -349,7 +358,45 @@ a:visited {
             flex-wrap: wrap-reverse;
         }
     }
+    
+    .profile-wrapper {
+        display: flex;
+        
+        .profile {
+            flex-grow: 1;
+            padding: 30px 5%;
+            margin: 0 5%;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            background-color: $reallight;
+            
+            .icon-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                
+                a {
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+                
+                img {
+                    width: 50%;
+                    
+                }
+            }
+        }
+        
+    }
+    
+    @media (max-width: 639px) {
+        .profile-wrapper {
+            flex-wrap: wrap;
+        }
+    }
 }
+
+
 
 #body-container {
 }
