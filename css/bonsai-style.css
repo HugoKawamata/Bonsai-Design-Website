@@ -106,6 +106,9 @@ a:visited {
   margin: auto;
   margin-top: 5px; }
 
+@media (max-width: 639px) {
+  .nav-under {
+    display: none; } }
 #page-head {
   font-family: "Montserrat", sans-serif;
   color: #FFF;
@@ -144,6 +147,11 @@ a:visited {
       #page-head nav #navbar li:hover > .nav-under {
         transition: width 0.5s;
         width: 100%; }
+      @media (max-width: 639px) {
+        #page-head nav #navbar li:hover > .nav-under {
+          display: none; }
+        #page-head nav #navbar li {
+          padding-bottom: 10px; } }
       #page-head nav #navbar .active {
         color: #80CA50; }
 
@@ -168,6 +176,10 @@ a:visited {
     #main-body .info-cont .info-cont-img img {
       width: 100%;
       align-self: center; }
+@media (min-width: 640px) {
+  #main-body .info-cont {
+    margin: 0 20%;
+    margin-bottom: 30px; } }
 @media (max-width: 639px) {
   #main-body .info-cont {
     padding: 4% 0; }

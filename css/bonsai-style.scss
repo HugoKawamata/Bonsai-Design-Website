@@ -208,6 +208,12 @@ a:visited {
     margin-top: 5px;
 }
 
+@media (max-width: 639px) {
+    .nav-under {
+        display: none;
+    }
+}
+
 #page-head {
     font-family: $head-font;
     color: #FFF;
@@ -264,6 +270,16 @@ a:visited {
                 width: 100%;
             }
             
+            @media (max-width: 639px) {
+                li:hover > .nav-under {
+                    display: none;
+                }
+                
+                li {
+                    padding-bottom: 10px;
+                }
+            }
+            
             .active {
                 color: $spotify1;
             }
@@ -302,6 +318,13 @@ a:visited {
                 width: 100%;
                 align-self: center;
             }
+        }
+    }
+    
+    @media (min-width: 640px) {
+        .info-cont {
+            margin: 0 20%;
+            margin-bottom: 30px;
         }
     }
     
