@@ -285,7 +285,6 @@ a:visited {
         background-color: #B2ED87;
         padding: 4%;
         margin-bottom: 30px;
-        opacity: 0;
         
         .info-cont-text {
             padding: 0px 5%;
@@ -325,18 +324,6 @@ a:visited {
         
         .slide-left {
             flex-wrap: wrap-reverse;
-        }
-    }
-    
-    @media (min-width: 640px) {
-        .slide-right {
-            margin-left: 15%;
-            margin-right: 25%;
-        }
-
-        .slide-left {
-            margin-left: 25%;
-            margin-right: 15%;
         }
     }
 }

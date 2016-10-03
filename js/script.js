@@ -3,6 +3,25 @@
 
 $(document).ready(function () {
     "use strict";
+    
+    $('.slide-right').each(function () {
+        if ($(window).width() > 639) {
+            $(this).css({
+                'opacity': '0',
+                'margin-left': '25%',
+                'margin-right': '15%'
+            });
+        }
+    });
+    $('.slide-left').each(function () {
+        if ($(window).width() > 639) {
+            $(this).css({
+                'opacity': '0',
+                'margin-left': '15%',
+                'margin-right': '25%'
+            });
+        }
+    });
     $(window).scroll(function () {
         
         /* Check the location of each desired element */
