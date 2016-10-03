@@ -25,7 +25,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         
         /* Check the location of each desired element */
-        $('.info-cont').each(function (i) {
+        $('.slider').each(function (i) {
             var bottom_of_object = $(this).position().top + $(this).outerHeight(),
                 bottom_of_window = $(window).scrollTop() + $(window).height();
                 

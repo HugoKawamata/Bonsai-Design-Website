@@ -42,6 +42,7 @@ h3 {
     font-size: 1.6em; } }
 a {
   text-decoration: none;
+  font-size: 1.2em;
   color: #FBA100; }
 
 a:visited {
@@ -182,6 +183,19 @@ a:visited {
     #main-body .info-cont .info-cont-img img {
       width: 100%;
       align-self: center; }
+#main-body .portfolio-item {
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center; }
+  #main-body .portfolio-item p {
+    text-align: center; }
+  #main-body .portfolio-item .portfolio-link {
+    width: 100%; }
+    #main-body .portfolio-item .portfolio-link img {
+      margin-top: 10px;
+      width: 100%; }
+  #main-body .portfolio-item .pf-text-link {
+    text-align: center; }
 @media (min-width: 640px) {
   #main-body .info-cont {
     margin: 0 20%;

@@ -116,6 +116,7 @@ h3 {
 
 a {
     text-decoration: none;
+    font-size: 1.2em;
     color: $sunrise;
 }
 
@@ -328,6 +329,31 @@ a:visited {
                 align-self: center;
             }
         }
+        
+    }
+    
+    .portfolio-item {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        
+        p {
+            text-align: center;
+        }
+        
+        .portfolio-link {
+            width: 100%;
+            img {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+        
+        .pf-text-link {
+            text-align: center;
+        }
+        
+        
     }
     
     @media (min-width: 640px) {
