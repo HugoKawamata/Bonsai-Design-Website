@@ -165,6 +165,53 @@ a:visited {
   padding: 30px 0px;
   font-size: 1.2em;
   line-height: 1.4em; }
+#main-body .pricing-cont-text {
+  padding: 0px 5%;
+  width: 100%; }
+  #main-body .pricing-cont-text .pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%; }
+    #main-body .pricing-cont-text .pricing-table .pricing-column {
+      border-radius: 10px;
+      border-style: solid;
+      border-color: #2D2D2D;
+      border-width: 4px;
+      background-color: #B2ED87;
+      padding-bottom: 30px; }
+      #main-body .pricing-cont-text .pricing-table .pricing-column .pricing-row {
+        font-size: 1.3em;
+        padding: 10px 10px;
+        text-align: center; }
+      #main-body .pricing-cont-text .pricing-table .pricing-column .col-head {
+        border-radius: 10px;
+        font-size: 4em;
+        font-weight: 900; }
+      #main-body .pricing-cont-text .pricing-table .pricing-column .fine-print {
+        font-size: 0.5em; }
+      #main-body .pricing-cont-text .pricing-table .pricing-column form {
+        display: flex;
+        justify-content: space-around; }
+      #main-body .pricing-cont-text .pricing-table .pricing-column .stripe-button-el {
+        text-align: center;
+        margin: auto; }
+      #main-body .pricing-cont-text .pricing-table .pricing-column .stripe-button-el span {
+        text-align: center;
+        margin: auto; }
+  @media (min-width: 640px) {
+    #main-body .pricing-cont-text .pricing-column {
+      width: 27%; } }
+  @media (max-width: 639px) {
+    #main-body .pricing-cont-text .pricing-column {
+      width: 100%;
+      margin-bottom: 10px; } }
+#main-body .pricing-cont {
+  display: flex;
+  border-radius: 15px;
+  padding: 4%;
+  margin: 0px 5%; }
 #main-body .info-cont {
   margin: 0px;
   display: flex;

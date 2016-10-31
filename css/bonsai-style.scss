@@ -15,6 +15,7 @@ $light :#EFD9C1;
 $highlighter: #FFDF00;
 
 //Greens (yellower to darker)
+$lightboys: #D2FFA7;
 $reallight: #B2ED87;
 $lightspotify: #90D65E;
 $limefrog: #ABDB48;
@@ -304,6 +305,92 @@ a:visited {
         line-height: 1.4em;
     }
     
+    .pricing-cont-text {
+        padding: 0px 5%;
+        width: 100%;
+        
+        .pricing-table {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-around;
+            width: 100%;
+
+            .pricing-column {
+                border-radius: 10px;
+                border-style: solid;
+                border-color: $granite;
+                border-width: 4px;
+                background-color: $reallight;
+                padding-bottom: 30px;
+                
+                .pricing-row {
+                    font-size: 1.3em;
+                    padding: 10px 10px;
+                    text-align: center;
+                    
+                }
+                
+                .row-name{
+                }
+                
+                .col-head {
+                    border-radius: 10px;
+                    font-size: 4em;
+                    font-weight: 900;
+                    
+                }
+                
+                .big-money {
+                }
+                
+                .fine-print {
+                    font-size: 0.5em;
+                }
+                
+                form {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                
+                .stripe-button-el {
+                    text-align: center;
+                    margin: auto;
+                }
+                
+                .stripe-button-el span {
+                    text-align: center;
+                    margin: auto;
+                }
+                
+                .stripe-button-el span:after {
+                }
+            }
+        }
+        
+        @media (min-width: 640px) {
+            .pricing-column {
+                width: 27%;
+            }
+        }
+        
+        @media (max-width: 639px) {
+             .pricing-column {
+                 width: 100%;
+                 margin-bottom: 10px;
+             }
+        }
+    }
+    
+    .pricing-cont {
+        display: flex;
+        border-radius: 15px;
+        padding: 4%;
+        margin: 0px 5%;
+        
+    }
+    
+    
     .info-cont {
         margin: 0px;
         display: flex;
@@ -421,6 +508,8 @@ a:visited {
         }
     }
 }
+
+
 
 
 

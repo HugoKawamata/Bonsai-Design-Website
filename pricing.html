@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php require_once('./config.php'); ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="Grow your local business and increase customer reach with a strong social media presence and mobile-friendly website.">
@@ -55,74 +56,71 @@
             </div>
         </div>
         <div id="main-body">
-            <div class="pricing-cont slider slide-right">
-                <div class="info-cont-text">
-                    <h3>Grow Your Small Business</h3>
+            <div class="pricing-cont">
+                <div class="pricing-cont-text">
+                    <h3>Our Plans</h3>
                     <div class="underline"></div>
                     <p>
                         <div class="pricing-table">
                             <div class="pricing-column">
-                                <!-- The column containing row names -->
                                 <div class="pricing-row col-head">
-                                    Plan Name
+                                    $40<span class="fine-print">/mo</span>
                                 </div>
-                                <div class="pricing-row row-name">
-                                    Development Cost
+                                <div class="pricing-row col-name">
+                                    Simple and Cheap
+                                    <div class="underline"></div>
                                 </div>
-                                <div class="pricing-row row-name">
-                                    Monthly Upkeep
+                                <div class="pricing-row">
+                                    Static, responsive, mobile-friendly site.
                                 </div>
-                                <div class="pricing-row row-name">
-                                    Cost per Edit
+                                <div class="pricing-row">
+                                    $100 Development Cost
+                                </div>
+                                <form action="create-customer.php" method="POST">
+                                  <script
+                                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                    data-amount="999"
+                                    data-name="Stripe.com"
+                                    data-description="Widget"
+                                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                    data-locale="auto"
+                                    data-zip-code="true">
+                                  </script>
+                                </form>
+                            </div>
+                            <div class="pricing-column">
+                                <div class="pricing-row col-head">
+                                    <span class="big-money">$55</span><span class="fine-print">/mo</span>
+                                </div>
+                                <div class="pricing-row col-name">
+                                    Premium Plan
+                                    <div class="underline"></div>
+                                </div>
+                                <div class="pricing-row">
+                                    3 hours of updates, special features, SEO.
+                                </div>
+                                <div class="pricing-row">
+                                    $100 Development Cost
                                 </div>
                             </div>
                             <div class="pricing-column">
-                                <div class="pricing-row">
-                                    Basic Plan
-                                </div>
-                                <div class="pricing-row">
-                                    $100
-                                </div>
-                                <div class="pricing-row">
-                                    $40/month
-                                </div>
-                                <div class="pricing-row">
-                                    $15
-                                </div>
-                            </div>
-                            <div class="pricing-column">
                                 <div class="pricing-row col-head">
-                                    Unlimited Edits
+                                    $120<span class="fine-print">/mo</span>
+                                </div>
+                                <div class="pricing-row col-name">
+                                    E-Commerce
+                                    <div class="underline"></div>
                                 </div>
                                 <div class="pricing-row">
-                                    $100
+                                    Fully Functional E-Commerce Wordpress Website
                                 </div>
                                 <div class="pricing-row">
-                                    $55/month
-                                </div>
-                                <div class="pricing-row">
-                                    FREE
-                                </div>
-                            </div>
-                            <div class="pricing column">
-                                <div class="pricing-row col-head">
-                                    Premium Design
-                                </div>
-                                <div class="pricing-row">
-                                    $300
-                                </div>
-                                <div class="pricing-row">
-                                    $55/month
-                                </div>
-                                <div class="pricing-row">
-                                    FREE
+                                    $300 Development Cost
                                 </div>
                             </div>
                         </div>
                     </p>
-                </div>
-                <div class="info-cont-img">
-                    <img src="resources/images/website.png" alt="Website Icon" />
                 </div>
             </div>
         </div>
