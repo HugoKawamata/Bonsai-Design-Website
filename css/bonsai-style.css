@@ -158,6 +158,8 @@ a:visited {
           display: none; }
         #page-head nav #navbar li {
           padding-bottom: 10px; } }
+      #page-head nav #navbar li a div {
+        text-align: center; }
       #page-head nav #navbar .active {
         color: #80CA50; }
 

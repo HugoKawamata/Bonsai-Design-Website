@@ -290,6 +290,10 @@ a:visited {
                 }
             }
             
+            li a div {
+                text-align: center;
+            }
+            
             .active {
                 color: $spotify1;
             }
