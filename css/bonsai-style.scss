@@ -149,7 +149,7 @@ a:visited {
         display: flex;
     }
     
-    @media (max-width: 639px) {
+    @media (max-width: 639px)  {
         #covertron-text {
             margin: 20% 0;   
             text-shadow:
@@ -175,6 +175,35 @@ a:visited {
                 padding: 30px 5%;
             }
         }
+    }
+    
+    @media (max-height: 459px) {
+        #covertron-text {
+            margin: 20% 0;   
+            text-shadow:
+                -1px -1px 3px #000,
+                1px -1px 3px #000,
+                -1px 1px 3px #000,
+                1px 1px 3px #000;
+        
+            p {
+                display: none;
+            }
+            
+            h1, h2, h4 {
+                color: $clean;
+                animation-name: fadein;
+                animation-duration: 2s;
+            }
+            
+            h4 {
+                font-size: 1.4em;
+                line-height: 1.55em;
+                text-align: center;
+                padding: 30px 5%;
+            }
+        }
+        
     }
     
     @media (min-width: 640px) {
@@ -207,6 +236,16 @@ a:visited {
             }
         }
     }
+}
+@media (max-height: 459px) {
+    #covertron {
+        height: 150vh;
+        
+        #covertron-filter{
+            height: 150vh;
+        }
+    }
+    
 }
 
 /* Main body */
@@ -381,6 +420,13 @@ a:visited {
         @media (max-width: 639px) {
              .pricing-column {
                  width: 100%;
+                 margin-bottom: 10px;
+             }
+        }
+        
+        @media (max-height: 459px) {
+             .pricing-column {
+                 width: 80%;
                  margin-bottom: 10px;
              }
         }
