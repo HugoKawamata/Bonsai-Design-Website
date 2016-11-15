@@ -16,7 +16,7 @@ $highlighter: #FFDF00;
 
 //Greens (yellower to darker)
 $lightboys: #D2FFA7;
-$reallight: #B2ED87;
+$infobg: #2d2d2d;
 $lightspotify: #90D65E;
 $limefrog: #ABDB48;
 $greengreen: #63CF41;
@@ -76,14 +76,14 @@ $soil: #4D3C2F;
 /* Element specific */
 body {
     font-family: $body-font;
-    color: $granite;
-    background-color: $spotify1;
+    color: $clean;
+    background-color: $granite;
 }
 
 h1, h2, h3 {
     font-family: "Montserrat";
     font-weight: bold;
-    color: #000000;
+    color: $clean;
     text-align: center;
 }
 
@@ -127,7 +127,7 @@ a:visited {
 
 .underline {
     height: 2px;
-    background-color: #333;
+    background-color: $spotify1;
     width: 60%;
     margin: auto;
     margin-top: 10px; 
@@ -152,6 +152,7 @@ a:visited {
     @media (max-width: 639px)  {
         #covertron-text {
             margin: 20% 0;   
+            width: 100%;
             text-shadow:
                 -1px -1px 3px #000,
                 1px -1px 3px #000,
@@ -177,34 +178,6 @@ a:visited {
         }
     }
     
-    @media (max-height: 459px) {
-        #covertron-text {
-            margin: 20% 0;   
-            text-shadow:
-                -1px -1px 3px #000,
-                1px -1px 3px #000,
-                -1px 1px 3px #000,
-                1px 1px 3px #000;
-        
-            p {
-                display: none;
-            }
-            
-            h1, h2, h4 {
-                color: $clean;
-                animation-name: fadein;
-                animation-duration: 2s;
-            }
-            
-            h4 {
-                font-size: 1.4em;
-                line-height: 1.55em;
-                text-align: center;
-                padding: 30px 5%;
-            }
-        }
-        
-    }
     
     @media (min-width: 640px) {
         #covertron-text {
@@ -235,6 +208,36 @@ a:visited {
                 animation-duration: 2s;
             }
         }
+    }
+    
+    @media (max-height: 459px) {
+        #covertron-text {
+            margin: 20% 0;   
+            width: 100%;
+            text-shadow:
+                -1px -1px 3px #000,
+                1px -1px 3px #000,
+                -1px 1px 3px #000,
+                1px 1px 3px #000;
+        
+            p {
+                display: none;
+            }
+            
+            h1, h2, h4 {
+                color: $clean;
+                animation-name: fadein;
+                animation-duration: 2s;
+            }
+            
+            h4 {
+                font-size: 1.4em;
+                line-height: 1.55em;
+                text-align: center;
+                padding: 30px 5%;
+            }
+        }
+        
     }
 }
 @media (max-height: 459px) {
@@ -364,7 +367,7 @@ a:visited {
                 border-style: solid;
                 border-color: $granite;
                 border-width: 4px;
-                background-color: $reallight;
+                background-color: $infobg;
                 padding-bottom: 30px;
                 
                 .pricing-row {
@@ -381,6 +384,7 @@ a:visited {
                     border-radius: 10px;
                     font-size: 4em;
                     font-weight: 900;
+                    color: $spotify1;
                     
                 }
                 
@@ -445,7 +449,7 @@ a:visited {
         margin: 0px;
         display: flex;
         border-radius: 15px;
-        background-color: $reallight;
+        background-color: $infobg;
         padding: 4%;
         margin-bottom: 30px;
         
@@ -476,6 +480,7 @@ a:visited {
         
         p {
             text-align: center;
+            width: 100%;
         }
         
         .portfolio-link {
@@ -526,12 +531,11 @@ a:visited {
         display: flex;
         
         .profile {
-            flex-grow: 1;
             padding: 30px 5%;
             margin: 0 5%;
             margin-bottom: 30px;
             border-radius: 15px;
-            background-color: $reallight;
+            background-color: $infobg;
             
             .icon-container {
                 display: flex;
@@ -547,6 +551,12 @@ a:visited {
                     width: 50%;
                     
                 }
+            }
+        }
+        
+        @media (min-width: 640px) {
+            .profile {
+                width: 50%;
             }
         }
         

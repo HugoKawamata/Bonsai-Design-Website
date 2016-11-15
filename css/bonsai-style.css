@@ -12,13 +12,13 @@
 /* Element specific */
 body {
   font-family: "Source Sans Pro", sans-serif;
-  color: #2D2D2D;
-  background-color: #80CA50; }
+  color: #E8E8E8;
+  background-color: #2D2D2D; }
 
 h1, h2, h3 {
   font-family: "Montserrat";
   font-weight: bold;
-  color: #000000;
+  color: #E8E8E8;
   text-align: center; }
 
 h1 {
@@ -50,7 +50,7 @@ a:visited {
 
 .underline {
   height: 2px;
-  background-color: #333;
+  background-color: #80CA50;
   width: 60%;
   margin: auto;
   margin-top: 10px;
@@ -70,21 +70,7 @@ a:visited {
   @media (max-width: 639px) {
     #covertron #covertron-text {
       margin: 20% 0;
-      text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; }
-      #covertron #covertron-text p {
-        display: none; }
-      #covertron #covertron-text h1, #covertron #covertron-text h2, #covertron #covertron-text h4 {
-        color: #E8E8E8;
-        animation-name: fadein;
-        animation-duration: 2s; }
-      #covertron #covertron-text h4 {
-        font-size: 1.4em;
-        line-height: 1.55em;
-        text-align: center;
-        padding: 30px 5%; } }
-  @media (max-height: 459px) {
-    #covertron #covertron-text {
-      margin: 20% 0;
+      width: 100%;
       text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; }
       #covertron #covertron-text p {
         display: none; }
@@ -118,6 +104,22 @@ a:visited {
         color: #E8E8E8;
         animation-name: fadein;
         animation-duration: 2s; } }
+  @media (max-height: 459px) {
+    #covertron #covertron-text {
+      margin: 20% 0;
+      width: 100%;
+      text-shadow: -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000, 1px 1px 3px #000; }
+      #covertron #covertron-text p {
+        display: none; }
+      #covertron #covertron-text h1, #covertron #covertron-text h2, #covertron #covertron-text h4 {
+        color: #E8E8E8;
+        animation-name: fadein;
+        animation-duration: 2s; }
+      #covertron #covertron-text h4 {
+        font-size: 1.4em;
+        line-height: 1.55em;
+        text-align: center;
+        padding: 30px 5%; } }
 
 @media (max-height: 459px) {
   #covertron {
@@ -201,7 +203,7 @@ a:visited {
       border-style: solid;
       border-color: #2D2D2D;
       border-width: 4px;
-      background-color: #B2ED87;
+      background-color: #2d2d2d;
       padding-bottom: 30px; }
       #main-body .pricing-cont-text .pricing-table .pricing-column .pricing-row {
         font-size: 1.3em;
@@ -210,7 +212,8 @@ a:visited {
       #main-body .pricing-cont-text .pricing-table .pricing-column .col-head {
         border-radius: 10px;
         font-size: 4em;
-        font-weight: 900; }
+        font-weight: 900;
+        color: #80CA50; }
       #main-body .pricing-cont-text .pricing-table .pricing-column .fine-print {
         font-size: 0.5em; }
       #main-body .pricing-cont-text .pricing-table .pricing-column form {
@@ -242,7 +245,7 @@ a:visited {
   margin: 0px;
   display: flex;
   border-radius: 15px;
-  background-color: #B2ED87;
+  background-color: #2d2d2d;
   padding: 4%;
   margin-bottom: 30px; }
   #main-body .info-cont .info-cont-text {
@@ -261,7 +264,8 @@ a:visited {
   text-align: center;
   justify-content: center; }
   #main-body .portfolio-item p {
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   #main-body .portfolio-item .portfolio-link {
     width: 100%; }
     #main-body .portfolio-item .portfolio-link img {
@@ -288,12 +292,11 @@ a:visited {
 #main-body .profile-wrapper {
   display: flex; }
   #main-body .profile-wrapper .profile {
-    flex-grow: 1;
     padding: 30px 5%;
     margin: 0 5%;
     margin-bottom: 30px;
     border-radius: 15px;
-    background-color: #B2ED87; }
+    background-color: #2d2d2d; }
     #main-body .profile-wrapper .profile .icon-container {
       display: flex;
       flex-wrap: wrap;
@@ -303,6 +306,9 @@ a:visited {
         padding-bottom: 10px; }
       #main-body .profile-wrapper .profile .icon-container img {
         width: 50%; }
+  @media (min-width: 640px) {
+    #main-body .profile-wrapper .profile {
+      width: 50%; } }
 @media (max-width: 639px) {
   #main-body .profile-wrapper {
     flex-wrap: wrap; } }
