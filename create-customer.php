@@ -7,3 +7,4 @@
       'email' => strip_tags(trim($_POST['email']))
       'source'  => $token
   ));
+?>
