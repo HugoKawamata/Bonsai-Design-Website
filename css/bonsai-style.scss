@@ -351,107 +351,20 @@ a:visited {
         line-height: 1.4em;
     }
     
-    .pricing-cont-text {
-        padding: 0px 5%;
-        width: 100%;
-        
-        .pricing-table {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: space-around;
-            width: 100%;
-
-            .pricing-column {
-                border-radius: 10px;
-                border-style: solid;
-                border-color: $granite;
-                border-width: 4px;
-                background-color: $infobg;
-                padding-bottom: 30px;
-                
-                .pricing-row {
-                    font-size: 1em;
-                    padding: 10px 10px;
-                    text-align: center;
-                    
-                }
-                
-                .row-name{
-                }
-                
-                .col-head {
-                    border-radius: 10px;
-                    font-size: 2em;
-                    font-weight: 900;
-                    color: $spotify1;
-                    
-                }
-                
-                .big-money {
-                }
-                
-                .fine-print {
-                    font-size: 0.5em;
-                }
-                
-                form {
-                    display: flex;
-                    justify-content: space-around;
-                }
-                
-                .stripe-button-el {
-                    text-align: center;
-                    margin: auto;
-                }
-                
-                .stripe-button-el span {
-                    text-align: center;
-                    margin: auto;
-                }
-                
-                .stripe-button-el span:after {
-                }
-            }
-        }
-        
-        @media (min-width: 640px) {
-            .pricing-column {
-                width: 47%;
-            }
-        }
-        
-        @media (max-width: 639px) {
-             .pricing-column {
-                 width: 100%;
-                 margin-bottom: 10px;
-             }
-        }
-        
-        @media (max-height: 459px) {
-             .pricing-column {
-                 width: 80%;
-                 margin-bottom: 10px;
-             }
-        }
-    }
-    
-    .pricing-cont {
-        display: flex;
-        border-radius: 15px;
-        padding: 4%;
-        margin: 0px 5%;
-        
-    }
-    
     
     .info-cont {
         margin: 0px;
         display: flex;
+        justify-content: center;
         border-radius: 15px;
         background-color: $infobg;
         padding: 4%;
         margin-bottom: 30px;
+        background-size: cover;
+        
+        .background-overlay {
+            background-color: rgba(45, 45, 45, 0.4);
+        }
         
         .info-cont-text {
             padding: 0px 5%;
@@ -460,6 +373,10 @@ a:visited {
             p {
                 line-height: 1.4em;
             }
+        }
+        
+        .pricing {
+            width: 100%;
         }
         
         .info-cont-img {
@@ -472,6 +389,20 @@ a:visited {
         }
         
     }
+    
+    // Specific Backgrounds for pricing divs
+    .pricing-design {
+        background-image: url(../resources/images/pricing-design.png)
+    }
+    
+    .pricing-server {
+        background-image: url(../resources/images/pricing-server.jpg)
+    }
+    
+    .pricing-name {
+        background-image: url(../resources/images/pricing-name.jpg);
+    }
+    
     
     .portfolio-item {
         flex-wrap: wrap;
