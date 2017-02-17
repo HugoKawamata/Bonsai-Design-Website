@@ -206,12 +206,12 @@ a:visited {
       background-color: #2d2d2d;
       padding-bottom: 30px; }
       #main-body .pricing-cont-text .pricing-table .pricing-column .pricing-row {
-        font-size: 1.3em;
+        font-size: 1em;
         padding: 10px 10px;
         text-align: center; }
       #main-body .pricing-cont-text .pricing-table .pricing-column .col-head {
         border-radius: 10px;
-        font-size: 4em;
+        font-size: 2em;
         font-weight: 900;
         color: #80CA50; }
       #main-body .pricing-cont-text .pricing-table .pricing-column .fine-print {
@@ -227,7 +227,7 @@ a:visited {
         margin: auto; }
   @media (min-width: 640px) {
     #main-body .pricing-cont-text .pricing-column {
-      width: 27%; } }
+      width: 47%; } }
   @media (max-width: 639px) {
     #main-body .pricing-cont-text .pricing-column {
       width: 100%;

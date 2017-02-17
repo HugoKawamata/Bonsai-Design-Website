@@ -371,7 +371,7 @@ a:visited {
                 padding-bottom: 30px;
                 
                 .pricing-row {
-                    font-size: 1.3em;
+                    font-size: 1em;
                     padding: 10px 10px;
                     text-align: center;
                     
@@ -382,7 +382,7 @@ a:visited {
                 
                 .col-head {
                     border-radius: 10px;
-                    font-size: 4em;
+                    font-size: 2em;
                     font-weight: 900;
                     color: $spotify1;
                     
@@ -417,7 +417,7 @@ a:visited {
         
         @media (min-width: 640px) {
             .pricing-column {
-                width: 27%;
+                width: 47%;
             }
         }
         
